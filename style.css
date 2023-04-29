@@ -1,0 +1,150 @@
+html{
+    background-image:url(dark_night_haunted_mansion_hd_movies-1920x1080.jpg); 
+    
+} 
+
+@font-face {
+    font-family: 'Needleteeth Psycho';
+    src: url('NeedleteethPsycho.eot');
+    src: url('NeedleteethPsycho.eot?#iefix') format('embedded-opentype'),
+        url('NeedleteethPsycho.woff2') format('woff2'),
+        url('NeedleteethPsycho.woff') format('woff'),
+        url('NeedleteethPsycho.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wizardry Night';
+    src: url('WizardryNightRegular.eot');
+    src: url('WizardryNightRegular.eot?#iefix') format('embedded-opentype'),
+        url('WizardryNightRegular.woff2') format('woff2'),
+        url('WizardryNightRegular.woff') format('woff'),
+        url('WizardryNightRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+div{
+    margin-top: 20px;
+    text-align: center;
+    border-style:solid; 
+    background-color:transparent;
+    border-radius: 13px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-color: transparent;
+    color: #ce0000;
+    font-size: 40px;
+    font-weight:bold;
+    font-family:'Wizardry Night';
+
+}
+
+
+button{
+    
+    color: black;
+    font-size: 20px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: #ff0000;
+    font-weight: lighter;
+    font-family: 'Wizardry Night';
+    border-color: red;
+    margin-inline: 10px;
+
+}
+
+#buttoncontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+
+#speaker{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-color: white; 
+  }
+
+
+h1{
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+    color: #ce0000;
+    font-size: 150px;
+    font-family:'Needleteeth Psycho';
+    font-weight:lighter;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+  } 
+
+  audio{
+    visibility: hidden;
+  }
+
+        
+  
+@media screen and (min-width:320px) and (max-width:480px) {
+    
+    
+    h1{
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        color: #ce0000;
+        font-size: 70px;
+        font-family:'Needleteeth Psycho';
+        
+    }
+
+    
+
+    div{
+    border-style:solid; 
+    background-color:transparent;
+    border-radius: 13px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-color: transparent;
+    color: #ce0000;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'Wizardry Night';
+    }
+
+    button{
+    
+        color: black;
+        font-size: 14px;
+        padding-inline: 20px;
+        padding-block: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: black;
+        color: #ff0000;
+        font-weight: lighter;
+        font-family: 'Wizardry Night';
+        border-color: red;
+    
+    }    
+}

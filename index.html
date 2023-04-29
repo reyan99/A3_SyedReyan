@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>A HAUNTED MANSION</title>
+</head>
+<body>
+ 
+
+  <audio controls autoplay loop>
+    <source src="background Audio.mp3" type="audio/mp3">
+  </audio>
+  
+  <script src="script.js"></script>
+    
+    <h1>A HAUNTED MANSION</h1>
+
+    <div>
+        <p id="text-to-speak">You find yourself standing in front of a spooky old mansion. The air is chilly and you can hear strange noises coming from inside. Do you dare to enter?</p>
+    </div>
+
+    
+    <span id="buttoncontainer">
+      <button onclick="window.location.href='2.html'">Enter the mansion</button>
+      <button onclick="window.location.href='leaves.html'"> Turn back and leave</button>
+    </span>
+
+
+      <script>
+  
+
+  window.onbeforeunload = function() {
+    stopAudio();
+  }
+
+  window.onunload = function() {
+    audio.pause();
+  }
+
+        function speak() {
+          const text = document.getElementById('text-to-speak').textContent;
+          const msg = new SpeechSynthesisUtterance(text);
+          window.speechSynthesis.speak(msg);
+        }
+        
+  
+  
+      </script> 
+
+    </body>
+</html>

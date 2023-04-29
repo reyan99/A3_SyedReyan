@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>A HAUNTED MANSION</title>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="boo-and-laugh-7060.mp3" type="audio/mp3">
+      </audio>
+        <script src="script.js"></script>
+    
+    <h1>A Haunted Mansion</h1>
+
+    <div>
+        <p id="text-to-speak">You try to fight the ghost, but your punches go right through it. The ghost laughs and disappears. You realize that you can't fight a ghost and decide to leave the mansion.</p>
+    </div>
+
+
+    <script>
+                window.onload = function() {
+    speak();
+  }
+
+      function speak() {
+        const text = document.getElementById('text-to-speak').textContent;
+        const msg = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(msg);
+      }
+  
+    </script>
+    
+</body>
+</html>
